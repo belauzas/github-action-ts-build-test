@@ -1,2 +1,8 @@
-test
-update
+name: First Github Action
+on: [push]
+jobs:
+    print-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello world"
+            - run: echo "Labas rytas, Lietuva!"
