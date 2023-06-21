@@ -15,4 +15,4 @@ jobs:
             - name: Build Typescript files into Javascript files
               run: npm run ts:build
             - name: Show the result (file tree)
-              run: tree -p -L 2
+              run: tree -pog -s --du -L 2
