@@ -1,12 +1,20 @@
 {
-  "name": "github-action-ts-build-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Rimantas (https://github.com/belauzas)",
-  "license": "MIT"
+    "name": "github-action-ts-build-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "nodemon ./dist",
+        "ts": "tsc --watch",
+        "ts:build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Rimantas (https://github.com/belauzas)",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.3.1",
+        "nodemon": "^2.0.22",
+        "typescript": "^5.1.3"
+    }
 }
